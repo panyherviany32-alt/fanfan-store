@@ -1,0 +1,37 @@
+:root{
+  --pink:#e78cae;--pink2:#f7c5d7;--soft:#fff7fa;--rose:#b85d7c;
+  --text:#4d3340;--white:#fff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:linear-gradient(180deg,#fff7fa 0%,#fff 55%,#fff7fa 100%)}
+.hero{padding:58px 20px 54px;text-align:center;background:
+ radial-gradient(circle at 15% 20%,#fff 0 5%,transparent 6%),
+ radial-gradient(circle at 85% 25%,#ffe5ef 0 7%,transparent 8%),
+ linear-gradient(135deg,#ffdce9,#fff 52%,#f7d8e6)}
+.brand{font-size:34px;font-weight:800;color:#d66f96;letter-spacing:-1px}
+.badge{display:inline-block;margin-top:10px;padding:7px 15px;border-radius:999px;background:#e78cae;color:white;font-weight:700}
+h1{font-size:clamp(34px,8vw,64px);margin:18px auto 10px;max-width:760px;line-height:1.03}
+.hero p{margin:0 auto 22px;max-width:620px;font-size:16px;color:#765865}
+.wa,.bottom a{display:inline-block;text-decoration:none;background:#d66f96;color:white;padding:12px 18px;border-radius:999px;font-weight:700}
+.container{max-width:1100px;margin:auto;padding:35px 18px 70px}
+.sectionTitle{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:15px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:#c86a8c}
+h2{margin:4px 0 0;font-size:28px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px}
+.chip{padding:10px 15px;border-radius:999px;background:white;border:1px solid #f0c1d2;box-shadow:0 6px 20px #e8b4c522}
+.productsTitle{margin-top:10px}
+.count{font-size:13px;color:#9b7180}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #f3d5df;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px #d98da51c}
+.productIcon{height:110px;display:grid;place-items:center;background:linear-gradient(135deg,#ffe2ed,#f7c8d9);font-size:45px;color:#d66f96}
+.cardBody{padding:17px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{min-height:35px;margin:0 0 16px;color:#806875;font-size:13px}
+.bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.bottom strong{font-size:18px;color:#b95778}
+.bottom a{padding:9px 13px;font-size:13px}
+.notice,.empty{padding:18px;border-radius:18px;background:#fff0f5;border:1px solid #f3c5d6;margin-bottom:20px}
+footer{text-align:center;padding:28px;color:#9b7180;font-size:13px}
+@media(max-width:520px){.hero{padding-top:38px}.brand{font-size:28px}h1{font-size:38px}.container{padding-left:14px;padding-right:14px}.grid{grid-template-columns:1fr 1fr}.card p{display:none}}
+@media(max-width:370px){.grid{grid-template-columns:1fr}}
